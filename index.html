@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myChart" width="400" height="300"></canvas>
+        <div>
+            <button class="btnConfirmed btn" onclick="updateChart()">Confirmed</button>
+            <button class="btnDeath btn" onclick="updateChart()">Death</button>
+            <button class="btnRecovered btn" onclick="updateChart()">Recovered</button>
+            <button class="btnCritical btn" onclick="updateChart()">Critical</button>
+
+        </div>
+        <div class="continent">
+            <button class="btnAsia btn continentbtn" id="Asia" >Asia</button>
+            <button class="btnEurope btn continentbtn" id="Europe" >Europe</button>
+            <button class="btnAfrica btn continentbtn" id="Africa" >Africa</button>
+            <button class="btnAmericas btn continentbtn" id="Americas">Americas</button>
+        </div>
+    </div>
+
+    <div id="country"></div>
+    <script src="./index.js"></script>
+    
+</body>
+</html>
